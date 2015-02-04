@@ -10,13 +10,13 @@
 　
 <div id="user_nav">
   <% if current_user %>
-      <%= current_user.name %>, <%= link_to "logout!!!" ,logout_path %>
+    <h1>  <%= current_user.name %>, <%= link_to "logout!!!" ,logout_path %></h1>
   <% else %>
       <%= link_to "Twitter login","/auth/twitter" %>
       <%= link_to "facebook login", "/auth/facebook" %>
   <% end %>
 </div>
-
+<hr>
 <%= yield %>
 
 </body>

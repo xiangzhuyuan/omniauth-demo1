@@ -1,4 +1,5 @@
 class PurchasesController < ApplicationController
+  layout 'application'
   # GET /purchases
   # GET /purchases.json
   def index
