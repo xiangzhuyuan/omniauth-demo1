@@ -31,8 +31,8 @@ gem 'omniauth-twitter'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
-
+gem 'unicorn'
+gem 'rack-timeout'
 # Deploy with Capistrano
 # gem 'capistrano'
 
