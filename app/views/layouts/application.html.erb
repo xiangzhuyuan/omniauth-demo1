@@ -9,8 +9,12 @@
 <body>
 　
 <div id="user_nav">
-  <%= link_to "Login with Twitter", "/auth/twitter" %>
-  <%= link_to "Login with facebook", "/auth/facebook" %>
+  <% if current_user %>
+      <%= current_user.name %>, <%= link_to "logout!!!" ,logout_path %>
+  <% else %>
+      <%= link_to "Twitter login","/auth/twitter" %>
+      <%= link_to "facebook login", "/auth/facebook" %>
+  <% end %>
 </div>
 
 <%= yield %>
